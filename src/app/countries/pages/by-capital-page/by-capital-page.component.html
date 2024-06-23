@@ -8,4 +8,10 @@
 
 <div>
     <!-- Resultados -->
+    <ul>
+        <li *ngFor="let country of countries">
+            {{ country.capital }} - {{ country.region }} - {{
+            country.population }} habitants
+        </li>
+    </ul>
 </div>
