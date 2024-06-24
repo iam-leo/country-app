@@ -1,0 +1,56 @@
+<div *ngIf="countries.length === 0; else table" class="flex justify-center max-w-md mx-auto mt-5">
+    <p class="w-full p-4 font-medium text-center bg-yellow-200 border border-yellow-600 rounded-md">Countries not
+        found!</p>
+</div>
+
+<ng-template #table>
+    <div class="relative mt-5 overflow-x-auto shadow-md sm:rounded-lg">
+        <table class="w-full text-sm text-left text-gray-500 rtl:text-right dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        #
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Flag
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Name
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Capital
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Population
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        link
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let country of countries; let i = index"
+                    class="border-b odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        {{ i+1 }}
+                    </th>
+                    <td class="px-6 py-4 text-xl">
+                        {{ country.flag }}
+                    </td>
+                    <td class="px-6 py-4">
+                        {{ country.name.common }}
+                    </td>
+                    <td class="px-6 py-4">
+                        {{ country.capital }}
+                    </td>
+                    <td class="px-6 py-4">
+                        {{ country.population | number }}
+                    </td>
+                    <td class="px-6 py-4">
+                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">+ Info</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</ng-template>
