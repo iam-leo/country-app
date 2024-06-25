@@ -4,7 +4,7 @@
 <div class="mt-5">
     <!-- SearchBox -->
     <shared-search-box (onValue)="searchByCapital($event)" (onDebounce)="searchByCapital($event)"
-        placeholder="Search by capital"></shared-search-box>
+        [initialValue]="intialValue" placeholder="Search by capital"></shared-search-box>
 </div>
 
 <div class="w-full">
