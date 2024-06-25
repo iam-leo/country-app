@@ -7,6 +7,8 @@
 </div>
 
 <div class="w-full">
+    <!-- Spinner -->
+    <shared-loading-spinner *ngIf="isLoading"></shared-loading-spinner>
     <!-- Resultados -->
     <countries-table [countries]="countries"></countries-table>
 </div>
