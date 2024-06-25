@@ -52,7 +52,8 @@
                         {{ country.population | number }}
                     </td>
                     <td class="px-6 py-4">
-                        <a href="#" class="font-medium text-blue-600 hover:underline">+ Info</a>
+                        <a [routerLink]="['/countries/by/', country.cca3]"
+                            class="font-medium text-blue-600 hover:underline">+ Info</a>
                     </td>
                 </tr>
             </tbody>

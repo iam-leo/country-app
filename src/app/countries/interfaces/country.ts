@@ -84,10 +84,7 @@ export interface Idd {
 }
 
 export interface Languages {
-  ara?: string;
-  spa?: string;
-  eng?: string;
-  ita?: string;
+  [key: string]: string;
 }
 
 export interface Maps {

@@ -19,7 +19,9 @@
                 <li><strong>Continent:</strong> {{country.continents}}</li>
                 <li><strong>Capital:</strong> {{country.capital[0]}}</li>
                 <li><strong>Borders:</strong> {{country.borders}}</li>
-                <li><strong>Languages:</strong> {{country.languages.spa}}</li>
+                <li><strong>Languages:</strong>
+                    {{ getLanguagesString(country.languages) }}
+                </li>
                 <li *ngFor="let currency of country.currencies | keyvalue"><strong>Currency:</strong> {{
                     currency.value.name }} {{ currency.value.symbol }}</li>
                 <li><strong>Coordinates:</strong> {{country.latlng}}</li>
@@ -51,5 +53,6 @@
             </ul>
         </div>
     </div>
+
 
 </div>

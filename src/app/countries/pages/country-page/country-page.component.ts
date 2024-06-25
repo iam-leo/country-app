@@ -33,4 +33,8 @@ export class CountryPageComponent implements OnInit {
         return (this.country = country);
       });
   }
+
+  getLanguagesString(languages: { [key: string]: string }): string {
+    return Object.values(languages).join(', ');
+  }
 }
