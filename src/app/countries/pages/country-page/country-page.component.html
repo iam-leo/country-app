@@ -5,9 +5,9 @@
 </ng-template>
 
 <div *ngIf="country; else loading">
-    <h2 class="text-3xl font-medium text-center text-blue-900">{{country.name.common | uppercase }}</h2>
+    <h2 class="text-5xl font-medium text-center text-blue-900">{{country.name.common | uppercase }}</h2>
 
-    <div class="grid grid-cols-2 gap-4 mt-5">
+    <div class="grid grid-cols-2 gap-4 px-5 py-8 mt-10 bg-gray-100 border border-gray-300 rounded-md">
         <div class="flex flex-col items-center justify-center w-full gap-3">
             <h3 class="font-medium text-blue-900">Flag</h3>
             <img [src]="country.flags.svg" [alt]="country.name.common" class="w-56">
@@ -15,7 +15,7 @@
             <img [src]="country.coatOfArms.svg" [alt]="country.name.common" class="w-48">
         </div>
         <div>
-            <ul>
+            <ul class="flex flex-col gap-y-4">
                 <li><strong>Continent:</strong> {{country.continents}}</li>
                 <li><strong>Capital:</strong> {{country.capital[0]}}</li>
                 <li><strong>Borders:</strong> {{country.borders}}</li>
@@ -26,28 +26,28 @@
                     currency.value.name }} {{ currency.value.symbol }}</li>
                 <li><strong>Coordinates:</strong> {{country.latlng}}</li>
                 <li><strong>Time Zone:</strong> {{country.timezones}}</li>
-                <li>
+                <li class="flex flex-wrap gap-y-1.5">
                     <strong>Translations: </strong>
                     <span
-                        class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{{country.translations['ara'].common}}
+                        class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 text-nowrap">{{country.translations['ara'].common}}
                     </span>
                     <span
-                        class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{{country.translations['spa'].common}}
+                        class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 text-nowrap">{{country.translations['spa'].common}}
                     </span>
                     <span
-                        class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{{country.translations['deu'].common}}
+                        class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 text-nowrap">{{country.translations['deu'].common}}
                     </span>
                     <span
-                        class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{{country.translations['fra'].common}}
+                        class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 text-nowrap">{{country.translations['fra'].common}}
                     </span>
                     <span
-                        class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{{country.translations['ita'].common}}
+                        class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 text-nowrap">{{country.translations['ita'].common}}
                     </span>
                     <span
-                        class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{{country.translations['jpn'].common}}
+                        class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 text-nowrap">{{country.translations['jpn'].common}}
                     </span>
                     <span
-                        class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{{country.translations['rus'].common}}
+                        class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 text-nowrap">{{country.translations['rus'].common}}
                     </span>
                 </li>
             </ul>
