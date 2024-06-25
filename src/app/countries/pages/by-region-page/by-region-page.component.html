@@ -3,7 +3,8 @@
 
 <div class="mt-5">
     <!-- SearchBox -->
-    <shared-search-box (onValue)="searchByRegion($event)" placeholder="Search by region"></shared-search-box>
+    <shared-search-box (onValue)="searchByRegion($event)" (onDebounce)="searchByRegion($event)"
+        placeholder="Search by region"></shared-search-box>
 </div>
 
 <div class="w-full">
