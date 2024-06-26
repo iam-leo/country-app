@@ -26,7 +26,6 @@ export class AppComponent implements OnInit {
   onResize() {
     window.addEventListener('resize', () => {
       this.isDesktop = window.innerWidth >= 768;
-      console.log(this.isDesktop);
 
       if (!this.isDesktop) this.isSidebarVisible = false;
 
