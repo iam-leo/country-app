@@ -6,9 +6,9 @@
     <!-- <shared-search-box (onValue)="searchByRegion($event)" (onDebounce)="searchByRegion($event)"
         placeholder="Search by region"></shared-search-box> -->
     <div class="flex justify-center w-full gap-x-4">
-        <button *ngFor="let region of regions" class="px-4 py-2 font-semibold text-white rounded-md bg-sky-700"
-            [ngClass]="{'bg-white border border-sky-700 text-sky-700' : selectedRegion === region}"
-            (click)="searchByRegion(region)">
+        <button *ngFor="let region of regions" class="px-4 py-2 font-semibold rounded-md" [ngClass]="{'bg-white border border-sky-700 text-sky-700' : selectedRegion === region,
+                'bg-sky-700 text-white': selectedRegion !== region
+            }" (click)="searchByRegion(region)">
             {{region}}
         </button>
     </div>
