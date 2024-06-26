@@ -1,7 +1,12 @@
-<div class="flex pt-10 gap-x-10">
-  <div class="ml-10">
+<div class="relative flex md:mt-10 gap-x-10">
+  <div class="relative md:ml-10">
+    <div class="absolute z-50 left-5 top-5">
+      <shared-toggle-sidebar (toggle)="toggleSidebar()" [isSidebarVisible]="isSidebarVisible"></shared-toggle-sidebar>
+    </div>
+
     <!-- Sidebar -->
-    <shared-sidebar></shared-sidebar>
+    <shared-sidebar class="" [ngClass]="{'hidden': !isSidebarVisible, 'block': isSidebarVisible}"
+      (click)="toggleSidebar()"></shared-sidebar>
   </div>
 
   <div class="block w-full px-14">

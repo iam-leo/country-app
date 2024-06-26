@@ -8,6 +8,7 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { SearchBoxComponent } from './components/search-box/search-box.component';
 import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ToggleSidebarComponent } from './components/toggle-sidebar/toggle-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FooterComponent } from './components/footer/footer.component';
     SearchBoxComponent,
     LoadingSpinnerComponent,
     FooterComponent,
+    ToggleSidebarComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [
@@ -28,6 +30,7 @@ import { FooterComponent } from './components/footer/footer.component';
     SearchBoxComponent,
     LoadingSpinnerComponent,
     FooterComponent,
+    ToggleSidebarComponent,
   ],
 })
 export class SharedModule {}
