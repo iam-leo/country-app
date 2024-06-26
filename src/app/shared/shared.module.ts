@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
 import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { LoadingSpinnerComponent } from './components/loading-spinner/loading-sp
     ContactPageComponent,
     SearchBoxComponent,
     LoadingSpinnerComponent,
+    FooterComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [
@@ -25,6 +27,7 @@ import { LoadingSpinnerComponent } from './components/loading-spinner/loading-sp
     ContactPageComponent,
     SearchBoxComponent,
     LoadingSpinnerComponent,
+    FooterComponent,
   ],
 })
 export class SharedModule {}
