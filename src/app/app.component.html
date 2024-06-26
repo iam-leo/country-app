@@ -1,4 +1,4 @@
-<div class="relative flex md:mt-10 gap-x-10">
+<div class="relative flex md:mt-10 lg:gap-x-10">
   <div class="relative md:ml-10">
     <div class="absolute z-50 left-5 top-5">
       <shared-toggle-sidebar (toggle)="toggleSidebar()" [isSidebarVisible]="isSidebarVisible"></shared-toggle-sidebar>
@@ -8,7 +8,7 @@
     <shared-sidebar class="" [ngClass]="{'hidden': !isSidebarVisible, 'block': isSidebarVisible}"></shared-sidebar>
   </div>
 
-  <div class="block w-full px-14">
+  <div class="block w-full px-4 overflow-x-auto lg:overflow-auto sm:px-8 md:px-14">
     <!-- Paginas -->
     <router-outlet></router-outlet>
   </div>
