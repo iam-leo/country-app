@@ -1,27 +1,29 @@
-# CountryApp
+# 🌎 CountryApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+## 🖼 Descripción:
 
-## Development server
+CountryApp es una aplicación para encontrar datos completos y actualizados de cualquier país: capital, bandera, continente, población, fronteras, moneda, lenguas, coordenadas y más. ¡Explora y aprende sobre el mundo hoy mismo!
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<div align="center">
+    <img src="https://github.com/iam-leo/country-app/assets/79548542/ac547cb3-a58b-45c3-80f9-0c6640f951bf">
+</div>
 
-## Code scaffolding
+## 🖼 Cómo utilizar
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Simplemente visita **[CountryApp](https://app-countries-angular.netlify.app)**.
 
-## Build
+2. Elige una sección de búsqueda:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+   - Por capital
+   - Por País
+   - Por Región
 
-## Running unit tests
+   Ingresa un término de búsqueada, por ej: Argentina.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Dale click/tap al botón `SEARCH` o espera un momento, se ejecutará automáticamente la búsqueda con el término ingresado.
 
-## Running end-to-end tests
+4. Espera unos segundos y listo ¡Ya tienes los resultados de tú búsqueda!
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🖼 Tecnologías utilizadas
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[![project teach](https://skillicons.dev/icons?i=angular,tailwind,typescript)](https://skillicons.dev)
