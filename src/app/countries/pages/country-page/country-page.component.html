@@ -24,7 +24,9 @@
             <ul class="flex flex-col items-center justify-center w-full lg:items-start gap-y-4">
                 <li class="text-center lg:text-left"><strong>Continent:</strong> {{country.continents}}</li>
                 <li class="text-center lg:text-left"><strong>Capital:</strong> {{country.capital[0]}}</li>
-                <li class="text-center lg:text-left"><strong>Borders:</strong> {{country.borders}}</li>
+                <li class="text-center lg:text-left"><strong>Borders:</strong>
+                    {{country.borders ? country.borders : 'No borders' }}
+                </li>
                 <li class="text-center lg:text-left"><strong>Languages:</strong>
                     {{ getLanguagesString(country.languages) }}
                 </li>
