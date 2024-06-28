@@ -17,7 +17,8 @@
             </div>
             <div class="flex flex-col items-center justify-center">
                 <h3 class="mb-3 font-medium text-blue-900 text-nowrap">Coat of arms</h3>
-                <img [src]="country.coatOfArms.svg" [alt]="country.name.common" class="w-20 lg:w-48 drop-shadow-md">
+                <img [src]="country.coatOfArms.svg ? country.coatOfArms.svg : 'assets/img/no-image-available.jpg' "
+                    [alt]="country.name.common" class="w-20 lg:w-48 drop-shadow-md">
             </div>
         </div>
         <div class="w-full mt-4">
