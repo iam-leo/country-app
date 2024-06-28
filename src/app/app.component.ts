@@ -9,7 +9,7 @@ export class AppComponent implements OnInit {
   title = 'country-app';
 
   isSidebarVisible: boolean = false;
-  isDesktop: boolean = window.innerWidth >= 768;
+  isDesktop: boolean = window.innerWidth >= 1024;
 
   ngOnInit(): void {
     // Monitorear cambios de pantalla (responsive) para mostrar/ocultar el sidebar
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
 
   onResize() {
     window.addEventListener('resize', () => {
-      this.isDesktop = window.innerWidth >= 768;
+      this.isDesktop = window.innerWidth >= 1024;
 
       if (!this.isDesktop) this.isSidebarVisible = false;
 
